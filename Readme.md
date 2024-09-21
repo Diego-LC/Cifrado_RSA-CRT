@@ -6,17 +6,16 @@ Este proyecto implementa el algoritmo de cifrado RSA, incorporando optimizacione
 
 ## Características
 
-- **Generación de Claves RSA**: Generación de dos grandes números primos (p, q), cálculo de la clave pública y privada.
+- **Generación de Claves RSA**: Generación de dos grandes números primos (p, q), cálculo de la clave pública y privada, pruebas de primalidad.
 - **Cifrado de Mensajes**: Implementación del cifrado modular usando 'square and multiply'.
 - **Descifrado Optimizado**: Descifrado acelerado mediante el uso del CRT.
 - **Exponenciación Modular Rápida**: Optimización en el cálculo de potencias modulares.
 
 ## Archivos
 
-- `key_generation.py`: Generación de las claves públicas y privadas (p, q, n, e, d).
-- `encryption.py`: Cifrado de mensajes utilizando la clave pública.
-- `decryption.py`: Descifrado de mensajes con optimización CRT utilizando la clave privada.
-- `utils.py`: Algoritmos auxiliares como la exponenciación modular rápida y el test de primalidad de Miller-Rabin.
+- `keysGen.py`: Generación de las claves públicas y privadas (p, q, n, e, d).
+- `RSA-CRT.py`: Cifrado y descifrado de mensajes utilizando CRT.
+- `RSA-sin-CRT.py`: Cifrado y descifrado de mensajes sin utilizar CRT.
 
 ## Requisitos
 
@@ -25,7 +24,7 @@ Este proyecto implementa el algoritmo de cifrado RSA, incorporando optimizacione
 
 ## Ejecución
 
-1. Genera las claves RSA:
+1. Ejecución:
 
    ```bash
-   python key_generation.py
+   python RSA-CRT.py
